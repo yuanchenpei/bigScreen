@@ -1,0 +1,80 @@
+.rps {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wot {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blockchainWarp {
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  .titleBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    .title1 {
+      padding-left: 40px;
+      width: 344px;
+      height: 66px;
+      line-height: 66px;
+      background-image: url('../../../assets/images/blockTitle1.png');
+      .rps;
+    }
+
+    .title2 {
+      min-width: 187px;
+      height: 54px;
+      padding-left: 20px;
+      background-image: url('../../../assets/images/blockTitle2.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      display: flex;
+      align-items: center;
+      .wot;
+
+      .titleText {
+        line-height: 54px;
+      }
+
+      .titleNum {
+        vertical-align: center;
+        color: #00FFE3;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .chartAndTable {
+    box-sizing: border-box;
+    padding: 10px 15px 15px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    .lineChart {
+      width: 32%;
+      height: 100%;
+    }
+
+    .scrollTable {
+      width: 65%;
+    }
+  }
+
+}
+
+
+
+

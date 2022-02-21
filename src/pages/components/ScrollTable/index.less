@@ -1,0 +1,65 @@
+.table {
+  height: 100%;
+  min-height: 160px;
+  box-sizing: border-box;
+
+  :global {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ant-table {
+      background: none;
+    }
+
+    .ant-table-tbody {
+      overflow-y: auto;
+    }
+
+    .ant-table-header .ant-table-hide-scrollbar {
+      overflow: auto;
+    }
+
+    .ant-table-thead {
+      height: 40px;
+      line-height: 40px;
+      background: rgba(18, 90, 192, 0.5);
+      text-align: center;
+
+      > tr > th {
+        padding: 0;
+        text-align: center;
+        background: none;
+        color: #FFFFFF;
+        border-bottom: none;
+      }
+    }
+
+    .ant-table-cell-scrollbar {
+      box-shadow: none;
+    }
+
+    .ant-table-container table > thead > tr:first-child th:last-child,
+    .ant-table-container table > thead > tr:first-child th:first-child {
+      border-radius: 0;
+    }
+
+    .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      display: none;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 5px;
+      text-align: center;
+      height: 40px;
+      color: #FFFFFF;
+      background: rgba(18, 90, 192, 0.1);
+      border-bottom: 1px solid rgba(112, 171, 255, 0.1);
+    }
+
+    .ant-table-tbody > tr.ant-table-row:hover > td, .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background: rgba(18, 90, 192, 0.3);
+    }
+  }
+}
+

@@ -1,0 +1,170 @@
+.rps {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.warpBG {
+  width: 100vw;
+  min-height: 1080px;
+  height: 100vh;
+  background-image: radial-gradient(circle, #000c18 52%, #000e1b 53%, #000e1b 72%, #00101e 73%, #00101e);
+
+  .warpBorder {
+    min-height: 1080px;
+    height: 100vh;
+    background-image: url('../../assets/images/backGround.png');
+    .rps;
+
+    .content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      align-items: center;
+      overflow-x: hidden;
+      background-image: url('../../assets/images/lightBall.png');
+      .rps;
+
+      .contentLeft {
+        width: 22%;
+        min-height: calc(~"1080px*0.82");;
+        height: calc(~"100vh*0.82");
+
+        .contentLeftTop{
+          width: 100%;
+          height: 50%;
+          background-image: url('../../assets/images/contentLeftTop.png');
+          .rps;
+        }
+        .contentLeftBottom{
+          width: 100%;
+          height: 50%;
+          background-image: url('../../assets/images/contentLeftBottom.png');
+          .rps;
+        }
+      }
+
+      .contentMiddle {
+        margin: 0 40px;
+        width: 44%;
+        min-height: calc(~"1080px*0.82");;
+        height: calc(~"100vh*0.82");
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .contentMiddleTop {
+          width: 100%;
+          height: calc(~"100%*0.67");
+          background-image: url('../../assets/images/contentMiddleTop.png');
+          .rps;
+        }
+
+        .contentMiddleBottom {
+          margin-top: 20px;
+          width: 100%;
+          height: calc(~"100%*0.3");
+          background-image: url('../../assets/images/contentMiddleBottom.webp');
+          .rps;
+        }
+      }
+
+      .contentRight {
+        width: 22%;
+        min-height: calc(~"1080px*0.82");;
+        height: calc(~"100vh*0.82");
+
+        .contentRightTop {
+          box-sizing: border-box;
+          width: 100%;
+          height: calc(~"100%*0.67");
+          padding: 20px 25px 0;
+          background-image: url('../../assets/images/contentRightTop.png');
+          .rps;
+
+          :global {
+            .ant-carousel {
+              height: 100%;
+
+              .slick-slider {
+                height: 100%;
+
+                .slick-list {
+                  height: 100%;
+
+                  .slick-track {
+                    height: 100%;
+
+                    .slick-slide {
+                      height: 100%;
+
+                      > div {
+                        height: 100%;
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+
+          .contentRightTopInner {
+            width: 100%;
+            height: 100%;
+            display: flex !important;
+            flex-direction: column;
+
+            .rankingTitle {
+              display: flex;
+              justify-content: space-between;
+              height: 30px;
+              font-size: 16px;
+              line-height: 30px;
+              color: #FFFFFF;
+              font-weight: 600;
+            }
+
+            .rankingBar {
+              flex: 1;
+            }
+          }
+        }
+
+        .contentRightBottom {
+          box-sizing: border-box;
+          padding-top: 20px;
+          width: 100%;
+          height: calc(~"100%*0.33");
+          display: flex;
+          flex-direction: column;
+          background-image: url('../../assets/images/contentRightBottom.png');
+          .rps;
+
+          .userPieTitle {
+            height: 33px;
+            line-height: 33px;
+            font-size: 16px;
+            color: #FFFFFF;
+            font-weight: 600;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+
+            .titleNum {
+              vertical-align: center;
+              color: #00FFE3;
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+
+          .userPieChart {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
