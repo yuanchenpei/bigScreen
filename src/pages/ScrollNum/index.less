@@ -1,0 +1,46 @@
+.box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1500px;
+  background-color: #000c18;
+  padding: 300px;
+}
+
+.dot {
+  width: 14px;
+  height: 82px;
+  font-size: 50px;
+  line-height: 82px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.boxItem {
+  display: inline-block;
+  width: 54px;
+  height: 82px;
+  font-size: 60px;
+  line-height: 82px;
+  text-align: center;
+  position: relative;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: rgba(0, 212, 188, 0.2);
+  border-radius: 5px;
+  border: 1px solid #00D4BC;
+  overflow: hidden;
+  box-shadow: 0 0 6px 0 #24CBFF;
+  margin-left: 20px;
+
+  & > span {
+    color: #FFFFFF;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: transform 0.5s ease-in-out;
+    letter-spacing: 10px;
+  }
+}
